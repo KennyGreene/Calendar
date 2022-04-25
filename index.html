@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+    <title>Calendar</title>
+
+    
+   <style>
+       html{
+        font-family: 'Noto Serif', serif;
+       }
+    .calender-body{
+        display: grid;
+        width: 40%;
+        height: 100%;
+        margin:auto;
+        background-color: darkslategray;
+        
+    }
+
+    .calender-weekDays{
+        display: grid;
+        padding: 1%;
+        column-gap: 5%;
+        font-size: 1.5em;
+        text-align: center;
+        color: white;
+        grid-template-columns: repeat(7, 1fr);
+        
+        background-color: darkslategray;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    }
+    
+
+    .calender-monthDays{
+        display: grid;
+        padding: 1%;
+        column-gap: 4%;
+        row-gap: 2%;
+        font-size: 1.5em;
+        text-align: center;
+        color: white;
+        grid-template-columns: repeat(7, 1fr);
+        
+        background-color:darkslategray;
+    
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    }
+    
+
+    .monthName{
+        color: black;
+        padding: 0;
+        width: 50%;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    h1{
+        font-size: 2em;
+        padding: 4%;
+        margin-bottom: 2%;
+       color: white;
+        
+        width: 486px;
+        margin: auto;
+        height: 1px;
+       background-color: darkslategray;
+        font-size: 50px;
+      
+    }
+    .prev-date, .next-date{
+opacity: 0.5;
+border-radius: 12px;
+    }
+    .prevMonth, .nextMonth{
+    
+ height: 60px;
+ border: solid black 2px;
+ background-color: darkslategray;
+ color: white;
+ font-family: 'Noto Serif', serif; ;
+}
+
+.prevMonth{
+   margin: 0%;
+}
+    </style>
+</head>
+<body>
+    
+        <div class ="monthname">
+           
+        
+            <h1> </h1> 
+        </div>
+    
+        <div class ="calender-body">
+            
+            <div class="calender-weekDays">
+            </div>
+            <div class="calender-monthDays">
+            </div>
+            <button type="button" class="prevMonth">
+                Previous Month
+            </button>
+        
+            <button type="button" class="nextMonth">
+                Next Month 
+            </button>
+        </div>
+       
+  
+        
+
+    <script src="main.js"></script>
+</html>
